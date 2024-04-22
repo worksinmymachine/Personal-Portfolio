@@ -1,11 +1,6 @@
 import React from 'react'
 import Timeline from './Timeline'
-import Projects from './Projects';
-import Card from './Card';
-import Car from '../assets/car.jpg'
-import Chatbot from '../assets/chatbot.jpg'
-import hostel from '../assets/hostel.jpg'
-import { FaArrowsRotate } from "react-icons/fa6";
+
 
 const Work = () => {
   const events=[
@@ -34,7 +29,7 @@ const Work = () => {
           <div></div>
           </div>
           
-          <div className='shadow-lg shadow-[#040c16] hover:scale-105 duration-500 rounded-md'>  
+          
           <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
             <div className="sm:text-right text-4xl font-bold  ">
               <p>
@@ -45,10 +40,8 @@ const Work = () => {
                 <Timeline events={events}/>
             </div>
           </div>
-          <div className='flex flex-row-reverse pr-4 py-4'>
-            <FaArrowsRotate />
-          </div>
-          </div>
+          
+         
           
         </div>
       </div>

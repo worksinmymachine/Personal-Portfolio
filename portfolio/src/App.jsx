@@ -10,6 +10,7 @@ import SkillCloud from './components/SkillCloud'
 import MyJourney from './components/MyJourney'
 import Work from './components/Work'
 import Timeline from './components/Timeline'
+import Projects from './components/Projects'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Technologies/>
       <Work/>
+      <Projects/>
       
     </div>
   )

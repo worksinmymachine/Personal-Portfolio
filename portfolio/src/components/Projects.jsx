@@ -2,10 +2,11 @@
 // import ReactDOM from 'https://cdn.skypack.dev/react-dom';
 
 import React, {useState} from "react";
+import Chatbot from "../assets/chatbot.jpg"
+import Hostel from '../assets/hostel.jpg'
+import Car from '../assets/car.jpg'
 
-
-import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
-import '../components/Projectscarousel.css'
+import Card from "./Card";
 const CARDS = 10;
 const MAX_VISIBILITY = 3;
 
@@ -15,23 +16,63 @@ const Projects = ({children}) => {
   const count = React.Children.count(children);
   
   return (
-    <div name="Projects" className='Projects carousel pr-4 pl-8'>
-      {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
-      {React.Children.map(children, (child, i) => (
-        <div className='card-container' style={{
-            '--active': i === active ? 1 : 0,
-            '--offset': (active - i) / 3,
-            '--direction': Math.sign(active - i),
-            '--abs-offset': Math.abs(active - i) / 3,
-            'pointer-events': active === i ? 'auto' : 'none',
-            'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-            'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
-          }}>
-          {child}
+    <div name="about" className="w-full h-full bg-[#0a192f] text-gray-300">
+      <div className="flex flex-col justify-center items-center w-full h-full">
+        <div className="max-w-[1000px] w-full px-4 grid grid-cols-2 gap-8">
+          <div className="sm:text-right pb-8 ">
+            <p className="text-4xl font-bold inline border-b-4 border-[#febc59]">
+              My Projects
+            </p>
+          </div>
+          <div></div>
+          </div>
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4">
+            <div className="sm:text-right text-4xl font-bold  ">
+              <p>
+                Practice Interview Voice Based Chatbot
+              </p>
+            </div>
+            <div>
+            <Card
+        title="Project Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        date="April 22, 2024"
+        image={Chatbot}
+      />
+            </div>
+          </div>
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-4 ">
+            <div className="sm:text-right text-4xl font-bold  ">
+              <p>
+                Hostel Management System
+              </p>
+            </div>
+            <div>
+            <Card
+        title="Project Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        date="April 22, 2024"
+        image={Hostel}
+      />
+            </div>
+          </div>
+          <div className="max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 py-4">
+            <div className="sm:text-right text-4xl font-bold  ">
+              <p>
+                Car recognition System
+              </p>
+            </div>
+            <div>
+            <Card
+        title="Project Title"
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        date="April 22, 2024"
+        image={Car}
+      />
+            </div>
+          </div>
         </div>
-      ))}
-      {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
-    </div>
+      </div>
   );
 };
 
