@@ -34,9 +34,9 @@ const Projects = ({children}) => {
             </div>
             <div>
             <Card
-        title="Project Title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        date="April 22, 2024"
+        title="Practice Interview Voice Based Chatbot"
+        description="Developed a voice based chatbot for interview practice,integrating voice and text inputs ,sentiment analysis and answer scoring. "
+        date="April , 2022"
         image={Chatbot}
       />
             </div>
@@ -49,9 +49,9 @@ const Projects = ({children}) => {
             </div>
             <div>
             <Card
-        title="Project Title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        date="April 22, 2024"
+        title="Hostel Management System"
+        description="Developed a Hostel management system to streamline various administrative tasks and enhance the overall hostel experience."
+        date="May , 2021"
         image={Hostel}
       />
             </div>
@@ -64,9 +64,10 @@ const Projects = ({children}) => {
             </div>
             <div>
             <Card
-        title="Project Title"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        date="April 22, 2024"
+        title="Car recognition System"
+        description="Developed a car recognition system using OpenCV and Haar Cascade classifiers for accurate detection and
+        classification of cars in real-time videos and images."
+        date="May, 2021"
         image={Car}
       />
             </div>
