@@ -11,6 +11,7 @@ import MyJourney from "./components/MyJourney";
 import Work from "./components/Work";
 import Timeline from "./components/Timeline";
 import Projects from "./components/Projects";
+import Contact from "./components/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -24,6 +25,7 @@ function App() {
       <Technologies/>
       <Work/>
       <Projects/>
+      <Contact/>
 
     </div>
   )
