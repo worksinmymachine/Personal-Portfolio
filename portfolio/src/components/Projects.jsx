@@ -38,6 +38,7 @@ const Projects = ({children}) => {
         description="Developed a voice based chatbot for interview practice,integrating voice and text inputs ,sentiment analysis and answer scoring. "
         date="April , 2022"
         image={Chatbot}
+        url="https://www.linkedin.com/posts/siddhant-dharmatti-98b239193_computerscience-engineering-project-activity-6939801313157201920-kJpb?utm_source=share&utm_medium=member_desktop"
       />
             </div>
           </div>
@@ -53,6 +54,7 @@ const Projects = ({children}) => {
         description="Developed a Hostel management system to streamline various administrative tasks and enhance the overall hostel experience."
         date="May , 2021"
         image={Hostel}
+        url="https://github.com/sumitjain236/Hostel-Management-System"
       />
             </div>
           </div>
@@ -69,6 +71,7 @@ const Projects = ({children}) => {
         classification of cars in real-time videos and images."
         date="May, 2021"
         image={Car}
+        url="https://github.com/sumitjain236/Object-Detection-And-Counting-Using-Opencv-and-Haar-Cascade"
       />
             </div>
           </div>

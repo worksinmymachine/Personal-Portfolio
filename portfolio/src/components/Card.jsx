@@ -3,7 +3,7 @@ import { MdOutlineAssignmentTurnedIn } from "react-icons/md";
 import Explore from '../assets/explore-unscreen.gif'
 
 
-const Card = ({ title, description, date, image }) => {
+const Card = ({ title, description, date, image , url }) => {
   return (
     <div className="max-w-md mx-auto bg-[#0a192f] border rounded-xl shadow-xl md:max-w-2xl relative overflow-hidden">
       <div className="md:flex">
@@ -20,7 +20,9 @@ const Card = ({ title, description, date, image }) => {
               <img src={Explore} alt="explore gif" />
             </div>
             <button className="bg-[#7dcbae] text-white font-bold py-2 px-4 rounded-lg shadow-md hover:shadow-lg transition duration-700 ease-in-out">
+              <a href={url}>
               Explore More
+              </a> 
             </button>
           </div>
         </div>
