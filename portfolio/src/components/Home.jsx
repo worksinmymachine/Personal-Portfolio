@@ -1,7 +1,11 @@
 import React from "react";
+import { Link } from "react-scroll";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Home = () => {
+  const handleSetActive = (to) => {
+    console.log(to);
+  };
   return (
     <div name="home" className="bg-[#0a192f] w-full h-screen">
       {/**Container */}
@@ -18,10 +22,19 @@ const Home = () => {
           innovation in the ever-evolving tech landscape
         </p>
         <div>
-          <button className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#245a82] hover:border-[#febc59]">View Work 
+          <button >
+          <Link
+              className="group text-white border-2 px-6 py-3 my-2 flex items-center hover:bg-[#245a82] hover:border-[#febc59]"
+              to="work"
+              smooth={true}
+              duration={500}
+              onSetActive={handleSetActive}
+            >
+            View Work 
           <span className="group-hover:rotate-90 duration-300">
           <HiArrowNarrowRight className="ml-2"/>
           </span>
+          </Link>
           </button>
         </div>
       </div>

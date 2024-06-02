@@ -12,7 +12,7 @@ const Navbar = () => {
   };
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
+      <div className="invisible md:visible">
         <img src={logo} alt="SD logo" style={{ width: "50px" }} />
       </div>
       {/*menu*/}
@@ -81,11 +81,11 @@ const Navbar = () => {
         </ul>
       </div>
       {/*hamburger*/}
-      <div onClick={handleClick} className="md:hidden z-10">
+      {/* <div onClick={handleClick} className="md:hidden z-10">
         {!nav ? <FaBars /> : <FaTimes />}
-      </div>
+      </div> */}
       {/**Mobile Menu */}
-      <ul
+      {/* <ul
         className={
           !nav
             ? "hidden"
@@ -158,7 +158,7 @@ const Navbar = () => {
             Contact
           </Link>
         </li>
-      </ul>
+      </ul> */}
       {/* *Social Media Icons */}
       <div className="hidden lg:flex fixed top-[35vh] left-0">
         <ul>
@@ -189,7 +189,7 @@ const Navbar = () => {
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-emerald-500">
             <a
               className="flex justify-between items-center text-gray-300  text-xl"
-              href="/"
+              href="https://drive.google.com/drive/folders/1Oi0BdY_QtDkerkdKRD47KJtnzLOinvUQ?usp=sharing"
             >
               Resume{" "}
               <BsFillPersonLinesFill style={{ marginLeft: "20px" }} size={30} />
